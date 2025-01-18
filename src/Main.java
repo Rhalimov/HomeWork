@@ -133,9 +133,9 @@ public class Main {
         int year = scanner.nextInt();
         boolean a = true;
         boolean b = false;
-         if (year % 4 == 0 ) {
-             if (year % 100 == 0) {
-                 if (year % 400 == 0) {
+         if (year % 4 == 0 ) {  //здесь проверяем первое условие, что год делится без остатка на 4
+             if (year % 100 == 0) { //здесь проверяем первое условие, что год делится без остатка на 100
+                 if (year % 400 == 0) { //здесь проверяем первое условие, что год делится без остатка на 400
                  System.out.println(a);
              } else {
                  System.out.println(b);}
