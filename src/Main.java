@@ -12,7 +12,8 @@ public class Main {
         //printThreeWords(); //объявляем метод к таске 1.1
 
         //checkSumSign(); //объявляем метод к таске 1.2
-        strokaChislo(); //объявляем метод к таске 1.8
+        //strokaChislo(); //объявляем метод к таске 1.8
+        visokosnYear(); //объявляем метод к таске 1.9
     }
 /*
     public static void printThreeWords() {
@@ -111,12 +112,12 @@ public class Main {
         } else {
             System.out.println(c);
         }
-    } */
+    }
     public static void strokaChislo(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите количество строк");
         int a = scanner.nextInt();
-        String b = "Зачем так сложно, Астон?".repeat(a); // вот этот repeat я подсмотрел, как раз начиная с 11 версии
+        String b = "Зачем так сложно, Астон?".repeat(a); // вот этот repeat я подсмотрел, не придумал как умножить строку на число
         if ((a > 0) && (a <= 5)) {
             System.out.println (b);
         } else {
@@ -124,6 +125,25 @@ public class Main {
         }
 
 
+    }
+    */
+    public static void visokosnYear() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите год от 1 до 3000");
+        int year = scanner.nextInt();
+        boolean a = true;
+        boolean b = false;
+         if (year % 4 == 0 ) {
+             if (year % 100 == 0) {
+                 if (year % 400 == 0) {
+                 System.out.println(a);
+             } else {
+                 System.out.println(b);}
+
+         }
+             System.out.println(a);
+    } else {
+            System.out.println(b); }
     }
 
 }
