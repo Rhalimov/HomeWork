@@ -1,21 +1,27 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //trueOrFalseChislo();//объявляем метод к таске 1.7
-        //celoeChislo();//объявляем метод к таске 1.6
-        //summNumbers(); //объявляем метод к таске 1.5
-       // compareNumbers();//объявляем метод к таске 1.4
-        //printColor(); //объявляем метод к таске 1.3
-        //printThreeWords(); //объявляем метод к таске 1.1
-
-        //checkSumSign(); //объявляем метод к таске 1.2
-        //strokaChislo(); //объявляем метод к таске 1.8
+        printThreeWords(); //объявляем метод к таске 1.1
+        checkSumSign(); //объявляем метод к таске 1.2
+        printColor(); //объявляем метод к таске 1.3
+        compareNumbers();//объявляем метод к таске 1.4
+        summNumbers(); //объявляем метод к таске 1.5
+        celoeChislo();//объявляем метод к таске 1.6
+        trueOrFalseChislo();//объявляем метод к таске 1.7
+        strokaChislo(); //объявляем метод к таске 1.8
         visokosnYear(); //объявляем метод к таске 1.9
+        massiveOdiNol(); //объявляем метод к таске 1.10
+        massiveNolSto(); //объявляем метод к таске 1.11
+        massiveUmnozhimDva(); //объявляем метод к таске 1.12
+        massiveKvadrat(); //объявляем метод к таске 1.13
+        massiveChislo(); //объявляем метод к таске 1.14
+
     }
-/*
+
     public static void printThreeWords() {
         System.out.println("O"); //тупенько, но эффективно))
         System.out.println("r");
@@ -126,7 +132,7 @@ public class Main {
 
 
     }
-    */
+
     public static void visokosnYear() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите год от 1 до 3000");
@@ -146,4 +152,75 @@ public class Main {
             System.out.println(b); }
     }
 
+    public static void massiveOdiNol() {
+        int[] arr = new int[10];
+         for (int i =0; i < 10; i++) {
+            if (i % 2 == 0){
+                System.out.println("1");
+            } else {
+                System.out.println("0");
+            }
+
+         }
+    }
+
+    public static void massiveNolSto() {
+        int [] arr = new int[101];
+         for(int i = 0; i < 101; i++) {
+             System.out.println("i = " + i);
+         }
+    }
+
+    public static void massiveUmnozhimDva() {
+        int [] arr = new int[12]; //тоже туповато, можно изящнее
+        arr[0] = 1;
+        arr[1] = 5;
+        arr[2] = 3;
+        arr[3] = 2;
+        arr[4] = 11;
+        arr[5] = 4;
+        arr[6] = 5;
+        arr[7] = 2;
+        arr[8] = 4;
+        arr[9] = 8;
+        arr[10] = 9;
+        arr[11] = 1;
+        for (int i = 0; i < 12; i++){
+
+            if (arr[i] < 6) {
+                System.out.println(arr[i] * 2);
+            }
+        }
+
+    }
+
+    public static void massiveKvadrat() {
+        int [][] arr = new int [3][3];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (i == j) {
+                    System.out.print(arr[i][j] = 1);
+                } else {
+                    System.out.print(arr[i][j] = 0);
+                } //вот здесь надо было скорее всего через Array как в 14
+            }
+        }
+    }
+    public static void massiveChislo(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите длину массива");
+        int len = scanner.nextInt();
+        int initialValue = 5;
+        int [] arr = new int [len];
+        for (int i = 0; i < len; i++){
+            arr[i] = initialValue;
+            System.out.println(Arrays.toString(arr)); // хорошо в лекции про это рассказали
+        }
+    }
+
 }
+
+
+
+
+
