@@ -129,9 +129,9 @@ public class Main {
     }
 
     public static void visokosnYear() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите год");
-        int year = scanner.nextInt();
+        //Scanner scanner = new Scanner(System.in);
+        //System.out.println("Введите год");
+        int year = 1700;//scanner.nextInt();
         boolean a = true;
         boolean b = false;
         if (year % 4 == 0) {  //здесь проверяем первое условие, что год делится без остатка на 4
