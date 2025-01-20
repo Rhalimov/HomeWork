@@ -8,17 +8,17 @@ public class Main {
         printThreeWords(); //объявляем метод к таске 1.1
         checkSumSign(); //объявляем метод к таске 1.2
         printColor(); //объявляем метод к таске 1.3
-        //compareNumbers();//объявляем метод к таске 1.4
-        //summNumbers(); //объявляем метод к таске 1.5
-        //celoeChislo();//объявляем метод к таске 1.6
-        //trueOrFalseChislo();//объявляем метод к таске 1.7
-        //strokaChislo(); //объявляем метод к таске 1.8
-        //visokosnYear(); //объявляем метод к таске 1.9
-        //massiveOdiNol(); //объявляем метод к таске 1.10
-        //massiveNolSto(); //объявляем метод к таске 1.11
-        //massiveUmnozhimDva(); //объявляем метод к таске 1.12
-        //massiveKvadrat(); //объявляем метод к таске 1.13
-        //massiveChislo(); //объявляем метод к таске 1.14
+        compareNumbers();//объявляем метод к таске 1.4
+        summNumbers(); //объявляем метод к таске 1.5
+        celoeChislo();//объявляем метод к таске 1.6
+        trueOrFalseChislo();//объявляем метод к таске 1.7
+        strokaChislo(); //объявляем метод к таске 1.8
+        visokosnYear(); //объявляем метод к таске 1.9
+        massiveOdiNol(); //объявляем метод к таске 1.10
+        massiveNolSto(); //объявляем метод к таске 1.11
+        massiveUmnozhimDva(); //объявляем метод к таске 1.12
+        massiveKvadrat(); //объявляем метод к таске 1.13
+        massiveChislo(); //объявляем метод к таске 1.14
 
     }
 
@@ -185,18 +185,18 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (i == j) {
-                    System.out.print(arr[i][j] = 1);
+                    System.out.println(arr[i][j] = 1);
                 } else {
-                    System.out.print(arr[i][j] = 0);
+                    System.out.println(arr[i][j] = 0);
                 } //вот здесь надо было скорее всего через Array как в 14
             }
         }
     }
 
     public static void massiveChislo() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите длину массива");
-        int len = scanner.nextInt();
+        //Scanner scanner = new Scanner(System.in);
+        //System.out.println("Введите длину массива");
+        int len = 4;//scanner.nextInt();
         int initialValue = 5;
         int[] arr = new int[len];
         for (int i = 0; i < len; i++) {
