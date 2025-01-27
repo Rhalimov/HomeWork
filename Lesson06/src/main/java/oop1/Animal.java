@@ -1,4 +1,4 @@
-package main.java;
+package main.java.oop1;
 
 public class Animal {
 
